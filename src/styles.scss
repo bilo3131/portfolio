@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: poppins-bold;
+    background-color: #141D2F;
+    color: white;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('./assets/fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url('./assets/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: poppins-thin;
+    src: url('./assets/fonts/Poppins-Thin.ttf');
+}
