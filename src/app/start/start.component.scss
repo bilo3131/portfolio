@@ -1,28 +1,9 @@
 * {
     margin: 0;
 }
-html {
-    height: 100vh;
-}
-
-.ellipse {
-    background-image: url(./../../assets/img/Background.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 20vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /**********************************************************************/
-    display: flex;
-    // display: none;
-    align-items: flex-end;
-}
 
 .background {
-    height: 90vh;
+    height: 100vh;
     margin-left: 100px;
     background-color: #141D2F;
     display: flex;
@@ -30,17 +11,18 @@ html {
     justify-content: space-around;
 }
 
-.profile-pic {
+.profile-image {
     width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 10px;
     z-index: 1;
     scale: 2.2;
-    margin-top: 400px;
-    background-image: url(./../../assets/img/png/shadows/photo_shadows.png);
-    background-size: 350px;
+    background-image: url(./../../assets/img/shadows/profileShadow.svg);
+    background-size: 380px;
     background-repeat: no-repeat;
-    background-position: 30px 150px;
-    /*********************************************************************/ 
-    // display: none;
+    background-position: 30px 120px;
+    overflow: hidden !important;
 }
 
 .name {
@@ -78,7 +60,7 @@ html {
         font-size: 1.5rem;
         font-weight: bold;
         transition: 225ms ease-in-out;
-        z-index: 2;
+        z-index: 3;
 
         &:hover {
             background-color: #9747FF;
@@ -103,8 +85,14 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 50px;
-    
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
 
     img {
         height: 40px;
@@ -148,7 +136,8 @@ html {
     gap: 5px;
 
     img {
-        rotate: 90deg;
+        rotate: -90deg;
+        scale: 0.6;
 
         &:hover {
             scale: 1;

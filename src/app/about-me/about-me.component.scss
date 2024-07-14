@@ -1,4 +1,63 @@
 body {
-    background-color: ;
-    z-index: 5;
+    height: 100vh;
+    padding-left: 100px;
+    display: flex;
+}
+
+.shadow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./../../assets/img/shadows/purple1.svg);
+    background-size: contain;
+    background-position: 135% 80%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.text-section {
+    padding-top: 10vh;
+    width: 40vw;
+    margin: 0;
+    span {
+        font-size: 1.2rem;
+        font-family: poppins-light;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 20px;
+
+    .bulb {
+        width: 50px;
+        height: 50px;
+        padding-right:14px;
+    }
+}
+
+.round-border {
+    height: 60vh;
+    width: 60vh;
+    border-radius: 100%;
+    border: 5px solid #70E61C;
+    align-self: center;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    background-image: url(./../../assets/img/profileImage2.png);
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+.line {
+    height: 2.5px;
+    // width: 500px;
+    background-color: #70E61C;
+    align-self: center;
 }
