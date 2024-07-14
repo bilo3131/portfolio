@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+    // position: static;
+    // z-index: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.all-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+
+    img {
+        width: 30vw;
+        height: 100%;
+        border-radius: 10px;
+        border: 5px solid #9747FF;
+    }
+
+    .description {
+        width: 30vw;
+    }
+}
+
+.project {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    text-align: left;
+    gap: 7rem;
+
+    p {
+        font-weight: lighter;
+        font-family: poppins-light;
+        font-size: 20px;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+h2 {
+    margin-top: 0;
+    color: #9747FF;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: poppins-light;
+    font-weight: lighter;
+    color: #70E61C;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    
+    button {
+        font-family: poppins-light;
+        font-weight: lighter;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            background-color: #70E61C;
+            cursor: pointer;
+        }
+    }
+    // gap: 50px;
+}
+
+.primary-button {
+    position: relative;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #9747FF;
+    color: white;
+    padding: 15px, 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 225ms ease-in-out;
+    z-index: 2;
+    // margin-top: 400px;
+}
+
+.secondary-button {
+    position: relative;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2.5px solid #70E61C;
+    color: white;
+    padding: 15px, 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 225ms ease-in-out;
+    z-index: 2;
+    // margin-top: 400px;
+}

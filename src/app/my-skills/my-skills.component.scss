@@ -43,13 +43,18 @@ body {
 
 .shadow {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    bottom: 0;
+    right: 0;
+    top: 0;
+    bottom: 20%;
+    left: 0;
+    // height: 100%;
+    // width: 100%;
+    // bottom: 0;
+    object-fit: cover;
     z-index: 1;
     background-image: url(./../../assets/img/shadows/green1.svg);
     background-repeat: no-repeat;
-    background-position: 0 40vh;
+    background-position: 0 0%;
 }
 
 .description {
