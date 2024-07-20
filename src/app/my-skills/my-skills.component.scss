@@ -1,25 +1,18 @@
-body {
-    position: relative;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    align-items: center;
+.gap150 {
     gap: 150px;
 }
 
 .skills-section {
-    position: relative;
     z-index: 2;
-    padding-left: 100px;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    gap: 7rem;
+    gap: 10rem;
 
     img {
         height: 6rem;
         width: 6rem;
-        transition: all 150ms ease-in-out;
+        transition: all 225ms ease-in-out;
 
         &:hover {
             transform: translateY(-30px);
@@ -30,49 +23,27 @@ body {
     div {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         font-size: large;
-        max-width: 6rem;
+        width: 6rem;
         height: 6rem;
 
         p {
             cursor: default;
+            font-size: 1.2rem;
+            text-align: center;
+
         }
     }
 }
 
-.shadow {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 20%;
-    left: 0;
-    // height: 100%;
-    // width: 100%;
-    // bottom: 0;
-    object-fit: cover;
-    z-index: 1;
-    background-image: url(./../../assets/img/shadows/green1.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0%;
-}
-
 .description {
     width: 50%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 10px;
-
-    * {
-        margin: 0;
-    }
 }
 
 .header {
-    display: flex;
-    align-items: center;
     width: 100%;
     justify-content: flex-end;
     gap: 50px;
@@ -85,24 +56,15 @@ body {
     }
 }
 
+.font-light {
+    font-size: 1.2rem;
+}
+
 .button {
-    position: relative;
-    width: 180px;
-    height: 70px;
-    border-radius: 10px;
     background-color: #70E61C;
     color: white;
-    padding: 15px, 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 225ms ease-in-out;
-    z-index: 2;
-    margin-top: 400px;
 
     &:hover {
         background-color: #9747FF;
-        cursor: pointer;
-        scale: 1.2;
     }
 }
-

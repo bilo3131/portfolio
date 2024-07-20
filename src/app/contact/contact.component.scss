@@ -1,0 +1,148 @@
+.contact {
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+}
+
+a {
+    z-index: 3;
+}
+
+.contact-text > b {
+    font-weight: 900;
+}
+
+.header {
+    gap: 80px;
+    // padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.line {
+    height: 5px;
+    width: 80px;
+    background-color: #9747FF;
+}
+
+.shadow-green {
+    background-image: url(./../../assets/img/shadows/green2.svg);
+    background-position: 100% -30%;
+    top: -30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.shadow-purple {
+    background-image: url(./../../assets/img/shadows/purple3.svg);
+    background-position: 0 130%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: poppins-light;
+}
+
+h4 {
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    position: relative;
+    gap: 315px;
+    z-index: 2;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 50%;
+    }
+
+    input, textarea {
+        height: 80px;
+        background-color: transparent;
+        border: 2.5px solid #9747FF;
+        border-radius: 20px;
+        font-size: 25px;
+        padding-left: 40px;
+        font-family: poppins-light;
+        color: white;
+        transition: all 225ms ease-in-out;
+
+        &:active {
+            border-color: #70E61C;
+        }
+
+        &:hover {
+            border-color: #70E61C;
+        }
+
+        &:invalid {
+            border-color: red;
+        }
+    }
+
+
+
+    textarea {
+        padding-top: 20px;
+        min-height: 300px;
+    }
+
+    textarea::placeholder, input::placeholder {
+        color: white;
+    }
+}
+
+.contact-text {
+    width: 50%;
+}
+
+button {
+    width: fit-content;
+    align-self: center;
+    color: white;
+    padding: 10px 40px;
+    background-color: #70E61C;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        background-color: #9747FF;
+    }
+
+    &:disabled {
+        background-color: grey;
+
+        &:hover {
+            cursor: not-allowed;
+            scale: 1;
+        }
+    }
+}
+
+.checkbox {
+    gap: 10px;
+
+    input {
+        height: 30px;
+        width: 30px;
+    }
+    
+    a {
+        color: #9747FF;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

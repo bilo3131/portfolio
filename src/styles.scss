@@ -1,4 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: poppins-bold;
@@ -6,12 +9,144 @@ body {
     color: white;
 }
 
-h2 {
-    font-size: 5rem;
+.relative {
+    position: relative;
 }
 
 h1 {
+    margin: 0;
     font-size: 7rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 7rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 5rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 42px;
+    color: #9747FF;
+}
+
+h5 {
+    margin: 0;
+    font-size: 30px;
+    font-family: poppins-light;
+    color: #70E61C;
+}
+
+.text-purple {
+    color: #9747FF;
+}
+
+.text-green {
+    color: #70E61C;
+}
+
+::-webkit-scrollbar-button {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap4 {
+    gap: 4rem;
+}
+
+.icon50 {
+    height: 50px;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.3;
+        rotate: 360deg;
+    }
+}
+
+.jc-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jc-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ai-center {
+    display: flex;
+    align-items: center;
+}
+
+.padding-l100 {
+    padding-left: 100px;
+}
+
+.padding-r100 {
+    padding-right: 100px;
+}
+
+.padding-r200 {
+    padding-right: 200px;
+}
+
+.font-light {
+    font-family: poppins-light;
+}
+
+.font-bold {
+    font-family: poppins-bold;
+}
+
+.font-medium {
+    font-family: poppins-medium;
+}
+
+.font-thin {
+    font-family: poppins-thin;
+}
+
+.button {
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 15px, 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 225ms ease-in-out;
+    z-index: 3;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.2;
+    }
+}
+
+.shadow {
+    position: absolute;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 @font-face {
