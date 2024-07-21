@@ -89,9 +89,31 @@
 }
 
 .scroll {
+    position: relative;
+    animation: down 1.5s infinite;
     rotate: 90deg;
     font-size: 2rem;
     margin-bottom: 100px;
     justify-content: flex-start;
     gap: 5px;
+
+    &::before {
+        position: absolute;
+        top: 15px;
+        left: 18px;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateX(25px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
 }

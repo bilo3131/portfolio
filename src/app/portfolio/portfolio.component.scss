@@ -44,12 +44,6 @@
     position: static;
     z-index: 2;
 
-    img {
-        width: 30vw;
-        height: 100%;
-        border-radius: 10px;
-    }
-
     .description {
         width: 30vw;
     }
@@ -60,6 +54,12 @@
     align-items: flex-start;
     text-align: left;
     gap: 7rem;
+
+    img {
+        width: 30vw;
+        height: 100%;
+        border-radius: 10px;
+    }
 }
 
 .reverse {

@@ -129,14 +129,9 @@ button {
     }
 }
 
-.checkbox {
+.privacy {
     gap: 10px;
 
-    input {
-        height: 30px;
-        width: 30px;
-    }
-    
     a {
         color: #9747FF;
         text-decoration: none;
@@ -145,4 +140,13 @@ button {
             text-decoration: underline;
         }
     }
+}
+
+.checkbox {
+    cursor: pointer;
+    height: 5rem;
+    min-width: 1rem;
+    width: 5rem;
+    border: 2px solid #70E61C;
+    box-sizing: border-box;
 }

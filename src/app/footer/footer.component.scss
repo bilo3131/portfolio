@@ -11,6 +11,12 @@
 .link {
     color: white;
     text-decoration: none;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        color: #70E61C;
+        text-decoration: underline #70E61C;
+    }
 }
 
 .green {
