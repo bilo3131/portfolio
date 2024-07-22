@@ -7,13 +7,12 @@ a {
     z-index: 3;
 }
 
-.contact-text > b {
+.contact-text>b {
     font-weight: 900;
 }
 
 .header {
     gap: 80px;
-    // padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -65,41 +64,70 @@ h4 {
         flex-direction: column;
         gap: 50px;
         width: 50%;
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: all 225ms ease-in-out;
+
+            .error {
+                color: red;
+                font-family: poppins-light;
+                font-size: 20px;
+                transition: all 225ms ease-in-out;
+                margin: 0;
+            }
+        }
     }
 
-    input, textarea {
+    input,
+    textarea {
         height: 80px;
-        background-color: transparent;
-        border: 2.5px solid #9747FF;
+        background-color: transparent !important;
+        border: 1px solid;
+        border-color: #9747FF;
         border-radius: 20px;
         font-size: 25px;
         padding-left: 40px;
         font-family: poppins-light;
         color: white;
-        transition: all 225ms ease-in-out;
-
-        &:active {
-            border-color: #70E61C;
-        }
 
         &:hover {
             border-color: #70E61C;
         }
 
-        &:invalid {
-            border-color: red;
-        }
     }
 
+    input.ng-invalid.ng-touched,
+    textarea.ng-invalid.ng-touched {
+        border-color: red;
+        background-image: url(./../../assets/img/icons/invalid.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 20px;
+        background-size: 40px;
+    }
 
+    input.ng-valid.ng-touched,
+    textarea.ng-valid.ng-touched {
+        border-color: #70E61C;
+        background-image: url(./../../assets/img/icons/valid.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 20px;
+        background-size: 40px;
+    }
 
     textarea {
         padding-top: 20px;
-        min-height: 300px;
+        height: 300px;
+        resize: none;
     }
 
-    textarea::placeholder, input::placeholder {
+    textarea::placeholder,
+    input::placeholder {
         color: white;
+        background-color: transparent;
     }
 }
 
@@ -130,6 +158,8 @@ button {
 }
 
 .privacy {
+    display: flex;
+    flex-direction: row !important;
     gap: 10px;
 
     a {
@@ -144,9 +174,5 @@ button {
 
 .checkbox {
     cursor: pointer;
-    height: 5rem;
-    min-width: 1rem;
-    width: 5rem;
-    border: 2px solid #70E61C;
-    box-sizing: border-box;
+    width: 2rem;
 }
