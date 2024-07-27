@@ -19,7 +19,7 @@ nav {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: 600;
     margin: 0;
 }
@@ -31,7 +31,7 @@ h3 {
     a {
         color: white;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.4rem;
         transition: 225ms ease-in-out;
 
         &:hover {
@@ -39,5 +39,74 @@ h3 {
             animation: underline 0.2s;
             text-decoration: underline;
         }
+    }
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 225ms ease-in-out;
+    
+    &:hover {
+        filter: drop-shadow(0 0 7px white);
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.d-none {
+    left: 0 !important;
+}
+
+.mobile-menu {
+    // display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.939);
+    position: absolute;
+    top: 0;
+    left: 110vw;
+    bottom: 0;
+    right: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.mobile-menu-buttons {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 939px) {
+    .nav-buttons {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
     }
 }

@@ -5,9 +5,11 @@
 
 .shadow {
     right: 0;
-    top: -190%;
+    top: 70vh;
     bottom: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
     background-image: url(./../../assets/img/shadows/purple1.svg);
     background-position: 100% 80%;
     z-index: 1;
@@ -19,8 +21,9 @@
     height: 100%;
     z-index: 2;
     margin: 0;
+
     span {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: poppins-light;
     }
 }
@@ -31,8 +34,8 @@
 }
 
 .icon {
-    height: 80px;
-    min-width: 80px;
+    height: 60px;
+    min-width: 60px;
     transition: all 225ms ease-in-out;
 
     &:hover {
@@ -47,15 +50,14 @@
     border: 5px solid #70E61C;
     align-self: center;
     background-image: url(./../../assets/img/profileImage2.png);
-    background-size: 40rem;
+    background-size: 35rem;
     background-position: 50% 20%;
     background-repeat: no-repeat;
 }
 
 .line {
     height: 2.5px;
-    width: 300px;
-    overflow-x: hidden;
+    width: 200px;
     background-color: #70E61C;
     align-self: center;
 }
@@ -64,7 +66,93 @@
     position: absolute;
     justify-content: flex-end;
     top: 5vh;
+    right: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
+    z-index: 1;
+}
+
+@media (max-width: 1390px) {
+    .round-border {
+        height: 50vh;
+        width: 50vh;
+        background-size: 30rem;
+    }
+}
+
+@media (max-width: 1320px) {
+    .line {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .line {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .text-section {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .round-border {
+        height: 40vh;
+        width: 40vh;
+        background-size: 20rem;
+    }
+
+    .icon {
+        height: 50px;
+        min-width: 50px;
+    }
+
+    .space {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .line {
+        width: 80px;
+    }
+}
+
+@media (max-width: 939px) {
+    .round-border {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 939px) {
+    .mobile-version {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .about-me {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 890px) {
+    .line {
+        width: 50px;
+    }
+
+    .text-section {
+        font-size: .9rem;
+    }
 }

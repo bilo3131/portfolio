@@ -2,6 +2,7 @@
     flex-direction: column;
     gap: 20vh;
     padding-top: 10vh;
+    width: 100%;
 }
 
 .line {
@@ -31,7 +32,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-y: hidden !important;
+    z-index: 2;
 
     h1 {
         margin: 0;
@@ -51,7 +52,7 @@
 }
 
 .project {
-    width: 60vw;
+    width: 70vw;
     align-items: flex-start;
     text-align: left;
     gap: 7rem;
@@ -66,6 +67,10 @@
 .reverse {
     flex-direction: row-reverse;
     text-align: right;
+
+    .buttons {
+        justify-content: flex-end;
+    }
 }
 
 .primary-button {
@@ -76,6 +81,11 @@
         background-color: #70E61C;
         scale: 1;
     }
+}
+
+.buttons {
+    display: flex;
+    gap: 5rem;
 }
 
 .secondary-button {
@@ -89,18 +99,49 @@
     }
 }
 
+.shadow-green {
+    top: -50vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./../../assets/img/shadows/green1.svg);
+}
+
 .shadow-purple {
-    top: 20%;
+    top: 70vh;
     bottom: 0;
     left: -5%;
     right: 0;
+    background-size: 40%;
     background-image: url(./../../assets/img/shadows/purple2.svg);
 }
 
-.shadow-green {
-    top: -22%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(./../../assets/img/shadows/green1.svg);
+@media (max-width: 939px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .buttons {
+        justify-content: space-around !important;
+        gap: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .line-right {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 490px) {
+    .buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
 }
