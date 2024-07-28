@@ -18,21 +18,9 @@ html, body {
     overflow-x: hidden;
 }
 
-// @media (min-width: 800px) {
-//     .ellipse {
-//         top: 15vh;
-//     }
-// }
-
 @media (min-width: 940px) {
     .ellipse {
         top: 55vh;
-    }
-}
-
-@media (min-width: 1010px) {
-    .ellipse {
-        top: 50vh;
     }
 }
 
@@ -44,13 +32,13 @@ html, body {
 
 @media (min-width: 1190px) {
     .ellipse {
-        top: 40vh;
+        top: 35vh;
     }
 }
 
 @media (min-width: 1290px) {
     .ellipse {
-        top: 35vh;
+        top: 30vh;
     }
 }
 
@@ -64,7 +52,7 @@ html, body {
 @media (min-width: 1500px) {
     .ellipse {
         background-size: 100%;
-        top: 35vh;
+        top: 20vh;
     }
 }
 
