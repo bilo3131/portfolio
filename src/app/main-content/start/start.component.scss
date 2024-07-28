@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+}
+
+.profile-image {
+    align-self: flex-end;
+    margin-left: 100px;
+    height: 30rem;
+    object-position: 3rem center;
+    scale: 2;
+    overflow-y: hidden;
+}
+
+.background {
+    background-image: url(./../../../assets/img/shadows/profileShadow.svg);
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    background-position-x: 2rem;
+    background-position-y: 5rem;
+}
+
+.name {
+    z-index: 2;
+}
+
+.rotate-270 {
+    rotate: 270deg;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        z-index: 3;
+    }
+}
+
+.description {
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: #70E61C;
+    color: white;
+
+    &:hover {
+        background-color: #9747FF;
+    }
+}
+
+.line {
+    height: 5px;
+    width: 150px;
+    background-color: #9747FF;
+}
+
+.place-bottom {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 130px;
+
+    .mail {
+        text-decoration: none;
+        color: white;
+        font-family: poppins-light;
+        font-size: 1.5rem;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            color: #9747FF;
+        }
+    }
+}
+
+.links {
+    margin-bottom: -200px;
+}
+
+.arrow-down {
+    height: 25px;
+    padding-right: 3px;
+
+    &:hover {
+        cursor: text;
+    }
+}
+
+.scroll {
+    position: relative;
+    animation: down 1.5s infinite;
+    rotate: 90deg;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    gap: 5px;
+
+    &::before {
+        position: absolute;
+        top: 15px;
+        left: 18px;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateX(25px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+@media (min-width: 940px) {
+    .profile-image {
+        scale: 1.7;
+        object-fit: cover;
+        object-position: 0rem -30px;
+    }
+
+    .padding-r200 {
+        padding-right: 50px;
+    }
+
+    .background {
+        background-position-x: 0rem;
+        background-position-y: 4rem;
+    }
+}
+
+@media (min-width: 1140px) {
+    .profile-image {
+        scale: 2;
+    }
+
+    .padding-r200 {
+        padding-right: 100px;
+    }
+
+    .button {
+        margin-right: 0;
+    }
+
+    .background {
+        background-position-x: 1rem;
+    }
+
+    .profile-image {
+        object-position: 1rem -30px;
+    }
+}
+
+@media (min-width: 1480px) {
+    .background {
+        background-size: 22rem;
+        background-position-x: 0rem;
+    }
+}
+
+@media (min-width: 1780px) {
+    .profile-image {
+        height: 33rem;
+    }
+
+    .background {
+        background-size: 23rem;
+        background-position-x: 1rem;
+        background-position-y: 5rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .profile-image {
+        height: 35rem;
+    }
+
+    .background {
+        background-size: 25rem;
+
+    }
+}
+
+@media (min-width: 2070px) {
+    .profile-image {
+        margin-left: 130px;
+    }
+}
+
+@media (min-width: 2210px) {
+    .profile-image {
+        margin-left: 165px;
+    }
+}
+
+@media (max-width: 939px) {
+    section {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .profile-image {
+        width: 100%;
+        scale: 0.8;
+        object-fit: cover;
+        object-position: 4rem -10rem;
+        height: 40rem;
+        margin-left: 0;
+    }
+
+    .background {
+        background-size: 45rem;
+        background-position-x: 5rem;
+        background-position-y: 0rem;
+    }
+
+    .content {
+        margin-top: -120px;
+    }
+
+    .padding-r200 {
+        padding-right: 0;
+    }
+
+    .place-bottom {
+        padding-bottom: 20px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .links {
+        margin-bottom: 0;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    @media (max-height: 820px) {
+        section {
+            height: 120vh;
+        }
+
+        .place-bottom {
+            margin-bottom: -100px;
+            padding-bottom: 0;
+        }
+
+        .content {
+            margin-top: -60px;
+        }
+    }
+
+    @media (max-height: 780px) {
+        .place-bottom {
+            margin-bottom: -200px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .content {
+        margin-top: -140px;
+    }
+}
+
+@media (max-width: 830px) {
+    .background {
+        background-position-x: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-image {
+        object-position: 4rem -5rem;
+    }
+
+    .background {
+        background-position-y: 5rem;
+        background-position-x: 0rem;
+    }
+
+    .line {
+        width: 120px;
+    }
+}
+
+@media (max-width: 710px) {
+    .background {
+        background-position-x: 2rem;
+        background-size: 40rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .background {
+        background-position-x: 3rem;
+        background-size: 35rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .background {
+        background-position-x: 1rem;
+    }
+
+    .profile-image {
+        object-position: 2rem -5rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .background {
+        background-position-x: 1rem;
+        background-size: 30rem;
+        background-position-y: 8rem;
+    }
+
+    .profile-image {
+        scale: 1.3;
+        object-position: 2rem 1rem;
+        height: 60vh;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .background {
+        background-position-x: 0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .background {
+        background-position-x: 1rem;
+        background-size: 26rem;
+    }
+
+    .profile-image {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .background {
+        background-position-x: 0rem;
+    }
+
+    .button {
+        margin-left: 50px;
+    }
+
+    .content {
+        margin-left: -50px;
+    }
+
+    .profile-image {
+        object-position: 2rem 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-image {
+        scale: 1.5;
+        height: 50vh;
+        margin-bottom: 10vh;
+    }
+}

@@ -1,0 +1,41 @@
+section {
+    margin: 20vh 100px 20vh 100px;
+    // text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.3rem;
+    font-family: poppins-thin;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        color: #70E61C;
+    }
+}

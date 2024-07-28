@@ -3,34 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StartComponent } from './start/start.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component';
-import { ProjectComponent } from './portfolio/project/project.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { StartComponent } from './main-content/start/start.component';
+import { AboutMeComponent } from './main-content/about-me/about-me.component';
+import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
+import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
+import { ContactComponent } from './main-content/contact/contact.component';
+import { ProjectComponent } from './main-content/portfolio/project/project.component';
+import { ImprintComponent } from './rights/imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
-import { provideRouter } from '@angular/router';
+import { PrivacyPolicyComponent } from './rights/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartComponent,
-    AboutMeComponent,
-    MySkillsComponent,
-    PortfolioComponent,
-    ContactComponent,
-    FooterComponent,
-    MenuComponent,
-    ProjectComponent
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MainContentComponent,
+    StartComponent,
+    AboutMeComponent,
+    MySkillsComponent,
+    PortfolioComponent,
+    ProjectComponent,
+    ContactComponent,
+
+    FooterComponent,
+    MenuComponent,
+    PrivacyPolicyComponent
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]

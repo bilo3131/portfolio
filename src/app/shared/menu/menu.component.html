@@ -1,0 +1,24 @@
+<nav class="jc-between ai-center">
+    <a href="" class="start">
+        <h3 class="padding-l100"><b class="green">B</b>ilal</h3>
+    </a>
+    <div class="nav-buttons padding-r100 flex-row">
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+    </div>
+    <div class="padding-r100 menu" id="menu" (click)="menuAnimation()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-buttons gap4 nav-buttons">
+            <a href="#start" (click)="menuAnimation()">Start</a>
+            <a href="#about-me" (click)="menuAnimation()">About me</a>
+            <a href="#skills" (click)="menuAnimation()">Skills</a>
+            <a href="#portfolio" (click)="menuAnimation()">Portfolio</a>
+            <a href="#contact" (click)="menuAnimation()">Contact</a>
+        </div>
+    </div>
+</nav>
