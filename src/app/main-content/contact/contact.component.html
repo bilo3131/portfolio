@@ -37,7 +37,7 @@
                 <p class="error privacy-error-position" *ngIf="showCheckboxError">Please accept the privacy policy.</p>
             </div>
             <button type="submit" [disabled]="!name.valid || !email.valid || !message.valid || !checkbox.checked"
-                class="button">Send message :)</button>
+                class="button" (click)="messageSent()">Send message :)</button>
         </form>
     </div>
     <div class="shadow shadow-green"></div>

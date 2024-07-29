@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from 'src/app/shared/footer/footer.component';
-import { MenuComponent } from 'src/app/shared/menu/menu.component';
 
 @Component({
   selector: 'app-imprint',

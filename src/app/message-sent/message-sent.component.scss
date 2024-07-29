@@ -1,0 +1,56 @@
+section {
+    height: 54vh;
+    padding-top: 20vh;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    z-index: 2;
+}
+
+span {
+    font-family: poppins-light;
+    z-index: 2;
+}
+
+.button {
+    background-color: #70E61C;
+    color: white;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    &:hover {
+        background-color: #9747FF;
+    }
+}
+
+.shadow-green {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./../../assets/img/shadows/green1.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.shadow-purple {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./../../assets/img/shadows/purple1.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}

@@ -40,6 +40,10 @@ export class ContactComponent {
     }
   }
 
+  messageSent() {
+    this.router.navigateByUrl('messageSent');
+  }
+
   mailTest = false;
 
   post = {

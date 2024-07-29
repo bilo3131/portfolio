@@ -33,10 +33,9 @@ import { PrivacyPolicyComponent } from './rights/privacy-policy/privacy-policy.c
     PortfolioComponent,
     ProjectComponent,
     ContactComponent,
-
     FooterComponent,
     MenuComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
