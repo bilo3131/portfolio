@@ -7,6 +7,35 @@ body {
     font-family: poppins-bold;
     background-color: #141D2F;
     color: white;
+    --sb-track-color: #9747ff00;
+    --sb-thumb-color: #9747FF;
+    --sb-size: 12px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 12px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+.max-width {
+    max-width: 1920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .relative {
@@ -47,15 +76,6 @@ h5 {
 
 .text-green {
     color: #70E61C;
-}
-
-::-webkit-scrollbar-button {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar {
-    background-color: transparent;
-    width: 0px;
 }
 
 .h100 {
@@ -128,6 +148,7 @@ h5 {
 .button {
     width: 180px;
     height: 70px;
+    border: unset;
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -172,6 +193,16 @@ h5 {
 @font-face {
     font-family: poppins-thin;
     src: url('./assets/fonts/Poppins-Thin.ttf');
+}
+
+@media (min-width: 2120px) {
+    .padding-l100 {
+        padding-left: 0;
+    }
+
+    .padding-r100 {
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 1390px) {

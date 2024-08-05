@@ -1,44 +1,46 @@
-<section class="contact relative" id="contact">
-    <div class="header ai-center" data-aos="fade-right" data-aos-offset="300">
-        <div class="line"></div>
-        <h2>Contact</h2>
-    </div>
-    <div class="padding-l100 padding-r100 contact-form">
-        <div class="contact-text" data-aos="fade-right" data-aos-offset="300">
-            <h4>Got a problem to solve?</h4>
-            <span>
-                <p>Contact me through this form, I am interested in hearing from you, knowing ideas and cotributing to
-                    your projects with my work.</p>
-                <p>Need a Frontend developer? <b>Contact me!</b></p>
-            </span>
+<section class="relative" id="contact">
+    <div class="contact max-width">
+        <div class="header ai-center" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
+            <div class="line"></div>
+            <h2>Contact</h2>
         </div>
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-offset="400">
-            <div>
-                <input minlength="2" [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
-                    required placeholder="Your name">
-                <p class="error" *ngIf="!name.valid && name.touched">Your name is required</p>
+        <div class="padding-l100 padding-r100 contact-form">
+            <div class="contact-text" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
+                <h4>Got a problem to solve?</h4>
+                <span>
+                    <p>Contact me through this form, I am interested in hearing from you, knowing ideas and cotributing to
+                        your projects with my work.</p>
+                    <p>Need a Frontend developer? <b>Contact me!</b></p>
+                </span>
             </div>
-            <div>
-                <input [(ngModel)]="contactData.email" #email="ngModel" type="text" id="email" name="email" required
-                    placeholder="Your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                <p class="error" *ngIf="!email.valid && email.touched">Your email is required</p>
-            </div>
-            <div>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id="message"
-                    required placeholder="Your message"></textarea>
-                <p class="error" *ngIf="!message.valid && message.touched ">Your message is empty</p>
-            </div>
-            <div>
-                <div class="privacy ai-center">
-                    <input type="checkbox" (change)="onCheckboxChange(checkbox.checked)" name="checkbox" [(ngModel)]="contactData.checkbox" #checkbox required class="checkbox">
-                    <p>I've read the <a (click)="openPrivacy()">privacy policy</a> and agree to the processing of my data as outlined.
-                    </p>
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">
+                <div>
+                    <input minlength="2" [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
+                        required placeholder="Your name">
+                    <p class="error" *ngIf="!name.valid && name.touched">Your name is required</p>
                 </div>
-                <p class="error privacy-error-position" *ngIf="showCheckboxError">Please accept the privacy policy.</p>
-            </div>
-            <button type="submit" [disabled]="!name.valid || !email.valid || !message.valid || !checkbox.checked"
-                class="button" (click)="messageSent()">Send message :)</button>
-        </form>
+                <div>
+                    <input [(ngModel)]="contactData.email" #email="ngModel" type="text" id="email" name="email" required
+                        placeholder="Your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <p class="error" *ngIf="!email.valid && email.touched">Your email is required</p>
+                </div>
+                <div>
+                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id="message"
+                        required placeholder="Your message"></textarea>
+                    <p class="error" *ngIf="!message.valid && message.touched ">Your message is empty</p>
+                </div>
+                <div>
+                    <div class="privacy ai-center">
+                        <input type="checkbox" (change)="onCheckboxChange(checkbox.checked)" name="checkbox" [(ngModel)]="contactData.checkbox" #checkbox required class="checkbox">
+                        <p>I've read the <a (click)="openPrivacy()">privacy policy</a> and agree to the processing of my data as outlined.
+                        </p>
+                    </div>
+                    <p class="error privacy-error-position" *ngIf="showCheckboxError">Please accept the privacy policy.</p>
+                </div>
+                <button type="submit" [disabled]="!name.valid || !email.valid || !message.valid || !checkbox.checked"
+                    class="button" (click)="messageSent()">Send message :)</button>
+            </form>
+        </div>
     </div>
     <div class="shadow shadow-green"></div>
     <div class="shadow shadow-purple"></div>
