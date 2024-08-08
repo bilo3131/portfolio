@@ -1,0 +1,46 @@
+{
+    "navbar": {
+        "abaout-me": "Über mich",
+        "skills": "Fähigkeiten",
+        "portfolio": "Portfolio"
+    },
+
+    "start": {
+        "i-am": "Ich bin",
+        "title": "FRONTEND ENTWICKLER",
+        "lets-talk": "Lass uns reden!",
+        "scroll-down": "Scroll runter"
+    },
+
+    "about-me": {
+        "title": "Über mich",
+        "text1": "Hi, I am a fast-learning frontend developer based in Biedenkopf, Germany, with a passion for overcoming challenges and acquiring new skills. I thrive in dynamic environments where I can continuously improve and expand my expertise. My determination and adaptability make me a valuable asset to any team, always eager to take on new projects and push the boundaries of my knowledge.",
+        "text2": "Bringing ideas to life is a passion of mine. Openness to advice comes naturally, as there's always something new to learn. Sharing my own experiences and advice is something I enjoy, helping to drive projects forward and achieve success. For me, collaboration and mutual support are the keys to successful and fulfilling projects.",
+        "text3": "Drawing on my gained experience, I strive to improve my work continually. When it comes to my job, I am a perfectionist, ensuring every detail is just right. Once I start something, I tenaciously see it through to the end, as completing projects successfully and maintaining the highest quality is crucial to me."
+    },
+
+    "my-skills": {
+        "title": "Meine Fähigkeiten",
+        "description": "I have gained experience in building projects with various front end technologies and concepts.",
+        "button": "Nehme Kontakt auf"
+    },
+
+    "portfolio": {
+        "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "projects": {
+            "description1": "Task manager inspired by the Kanban System. Creat and organize tasks using drag and drop functions, assign users and categories.",
+            "description2": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickenboss.",
+            "description3": "Based on the PokéAPI a simple library that provides and catalogues pokémon information."
+        }
+    },
+
+    "contact": {
+        "title": "Contact",
+        "question": "Got a problem to solve?",
+        "description": "Contact me through this form, I am interested in hearing from you, knowing ideas and cotributing to your projects with my work.",
+        "contact-me": "Need a Frontend developer? Contact me!",
+        "placeholder-name": "Your name",
+        "placeholder-email": "Your email",
+        "placeholder-message": "Your message"
+    }
+}

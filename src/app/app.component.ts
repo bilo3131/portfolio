@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portfolio';
 
-  onActivate(event:any) {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    })
+  constructor(public translate: TranslateService) {}
+
+  switchLanguage(lang: 'en' | 'de') {
+    this.translate.use(lang);
+  }
+
+  onActivate(event: Component) {
+    if (event.constructor.name === "PrivacyPolicyComponent" ){
+      window.scroll(0, 0);
+    }
   }
 }

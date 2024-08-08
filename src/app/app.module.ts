@@ -14,9 +14,14 @@ import { ContactComponent } from './main-content/contact/contact.component';
 import { ProjectComponent } from './main-content/portfolio/project/project.component';
 import { ImprintComponent } from './rights/imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { PrivacyPolicyComponent } from './rights/privacy-policy/privacy-policy.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function createTranslateLoader(http: HttpClient){
+  return new TranslateHttpLoader(http, './../assets/i18n', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +30,16 @@ import { PrivacyPolicyComponent } from './rights/privacy-policy/privacy-policy.c
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      useDefaultLang: true,
+      loader: {
+        provide: TranslateLoader,
+        useFactory:createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     FormsModule,
     MainContentComponent,
     StartComponent,

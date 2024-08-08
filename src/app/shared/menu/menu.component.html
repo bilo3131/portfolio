@@ -1,12 +1,15 @@
 <nav>
-    <div class="navbar jc-between ai-center max-width" >
+    <div class="navbar jc-between ai-center max-width">
         <a href="" class="start">
+            <!-- <img class="logo" src="./../../../assets/img/owl2.png" alt=""> -->
             <h3 class="padding-l100"><b class="green">B</b>ilal</h3>
         </a>
-        <div class="nav-buttons padding-r100 flex-row">
-            <a href="#about-me">About me</a>
+        <div class="nav-buttons padding-r100 flex-row ai-center">
+            <a href="#about-me">{{ "navbar.about-me" }}</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
+            <img src="./../../../assets/img/icons/language/english.png" (click)="switchLanguage('en')" alt="">
+            <img src="./../../../assets/img/icons/language/german.png" (click)="switchLanguage('de')" alt="">
         </div>
         <div class="padding-r100 menu" id="menu" (click)="menuAnimation()">
             <div class="bar1"></div>
@@ -20,6 +23,8 @@
                 <a href="#skills" (click)="menuAnimation()">Skills</a>
                 <a href="#portfolio" (click)="menuAnimation()">Portfolio</a>
                 <a href="#contact" (click)="menuAnimation()">Contact</a>
+                <img src="./../../../assets/img/icons/language/english.png" (click)="switchLanguage('en')" alt="">
+                <img src="./../../../assets/img/icons/language/german.png" (click)="switchLanguage('de')" alt="">
             </div>
         </div>
     </div>
