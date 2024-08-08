@@ -11,9 +11,9 @@ export class AppComponent {
 
   constructor(public translate: TranslateService) {}
 
-  switchLanguage(lang: 'en' | 'de') {
-    this.translate.use(lang);
-  }
+  // switchLanguage(lang: 'en' | 'de') {
+  //   this.translate.use(lang);
+  // }
 
   onActivate(event: Component) {
     if (event.constructor.name === "PrivacyPolicyComponent" ){

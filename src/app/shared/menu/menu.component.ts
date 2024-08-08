@@ -1,31 +1,20 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
+  imports: [TranslateModule],
   standalone: true,
 })
 export class MenuComponent {
 
-  english: boolean = true;
-  german: boolean = false;
-
-  constructor(public translateService: TranslateService) { }
+  constructor(public translate: TranslateService) { }
 
   switchLanguage(language: string) {
-    this.translateService.use(language);
-    if (language === 'en') {
-      this.english = true;
-      this.german = false;
-    } else if (language === 'de') {
-      this.english = false;
-      this.german = true;
-    }
+    this.translate.use(language);
   }
-
-
 
   menuAnimation() {
     document.getElementById('menu')?.classList.toggle('change');
