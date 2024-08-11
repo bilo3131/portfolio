@@ -1,8 +1,8 @@
 <section class="footer">
     <div class="footer-content padding-r100 padding-l100 jc-between ai-center max-width">
         <div>
-            <a href="" class="start"><h2><b class="green">B</b>ilal</h2></a>
-            <a class="link desktop" (click)="openImprint()">Imprint</a>
+            <a href="" class="start" (click)="openPage('')"><h2><b class="green">B</b>ilal</h2></a>
+            <a class="link desktop" (click)="openPage('imprint')">{{ "footer.imprint" | translate }}</a>
         </div>
         <p class="copyright">&copy; Bilal Alaç 2024</p>
         <div class="flex-row gap4">
@@ -13,6 +13,6 @@
             <a class="icon50" href="https://www.linkedin.com/in/bilal-alac-475978281/" target="_blank"><img class="icon50" src="./../../assets/img/icons/linkedIn.svg" alt="">
             </a>
         </div>
-        <a class="link mobile" (click)="openImprint()">imprint</a>
+        <a class="link mobile" (click)="openPage('imprint')">{{ "footer.imprint" | translate }}</a>
     </div>
 </section>

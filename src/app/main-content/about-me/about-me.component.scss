@@ -17,7 +17,7 @@
 
 .text-section {
     padding-top: 10vh;
-    width: 40%;
+    width: 50%;
     height: 100%;
     z-index: 2;
     margin: 0;
@@ -57,7 +57,7 @@
 
 .line {
     height: 2.5px;
-    width: 200px;
+    width: 150px;
     background-color: #70E61C;
     align-self: center;
 }
@@ -87,14 +87,12 @@
 }
 
 @media (max-width: 1290px) {
-    .line {
-        width: 100px;
-    }
-}
-
-@media (max-width: 1290px) {
     .text-section {
         width: 50%;
+    }
+    
+    .line {
+        width: 100px;
     }
 }
 
