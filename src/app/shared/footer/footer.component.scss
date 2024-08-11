@@ -36,7 +36,12 @@
 
 .start {
     text-decoration: none;
+    cursor: pointer;
     color: white;
+    
+    img {
+        height: 60px;
+    }
 }
 
 @media (max-width: 800px) {

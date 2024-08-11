@@ -113,5 +113,11 @@
     "restrictionInfo5": "If you have objected pursuant to Art. 21(1) GDPR, an assessment must be made between your interests and ours. Until it is determined whose interests prevail, you have the right to request the restriction of processing of your personal data.",
     "restrictionInfo6": "When you have restricted the processing of your personal data, except for storage, these data may only be processed with your consent or for the establishment, exercise, or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the European Union or a Member State.",
     "source": "Source:"
+  },
+
+  "message_sent": {
+    "title": "Your message is succesfully sent",
+    "message": "I will contact you soon :)",
+    "button": "Back to home"
   }
 }

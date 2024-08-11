@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,10 +11,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class MenuComponent {
 
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService, public router: Router) { }
 
   switchLanguage(language: string) {
     this.translate.use(language);
+  }
+
+  openPage(directory: string) {
+    this.router.navigateByUrl(directory);
   }
 
   menuAnimation() {

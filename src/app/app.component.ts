@@ -13,7 +13,7 @@ export class AppComponent {
 
   onActivate(event: Component) {
     if (event.constructor.name === "PrivacyPolicyComponent" ){
-      window.scroll(0, 0);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 }
