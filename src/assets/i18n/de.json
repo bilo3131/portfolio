@@ -39,6 +39,7 @@
         "required_name": "Dein Name wird benötigt",
         "required_email": "Deine Email wird benötigt",
         "required_message": "Deine Nachricht ist leer",
+        "required_privacy": "Bitte akzeptiere die Datenschutzerklärung",
         "read": "Ich habe die",
         "privacy_policy": "Datenschutzerklärung",
         "agreed": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",

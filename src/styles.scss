@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .max-width {
-    max-width: 1920px !important;
+    max-width: 1800px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -79,7 +79,9 @@ h5 {
 }
 
 .h100 {
+    padding-top: 100px;
     height: 100vh;
+    max-height: 850px;
 }
 
 .flex-row {
@@ -318,3 +320,9 @@ h5 {
         font-size: 1rem;
     }
 }
+
+// @media (min-height: 1050px) {
+//     .h100 {
+//         height: 1050px;
+//     }
+// }

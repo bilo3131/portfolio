@@ -1,8 +1,9 @@
 .portfolio {
     flex-direction: column;
-    gap: 20vh;
-    padding-top: 10vh;
+    gap: 100px;
     width: 100%;
+    height: 100%;
+    padding-top: 200px;
 }
 
 .line {
@@ -24,7 +25,13 @@
     justify-content: flex-end;
 }
 
+.header-description {
+    font-size: 1.2rem;
+}
+
 .section-text {
+    min-width: 300px;
+    max-width: 800px;
     font-size: 1.2rem;
 }
 
@@ -43,23 +50,25 @@
 .all-projects {
     display: flex;
     flex-direction: column;
-    gap: 30vh;
+    gap: 200px;
     position: static;
     z-index: 2;
 
     .description {
-        width: 30vw;
+        width: 30%;
     }
 }
 
 .project {
-    width: 70vw;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: flex-start;
     text-align: left;
     gap: 7rem;
 
     img {
-        width: 30vw;
+        width: 25rem;
         height: 100%;
         border-radius: 10px;
         transition: all 225ms ease-in-out;
@@ -106,23 +115,24 @@
 }
 
 .shadow-green {
-    top: -50vh;
+    top: -25rem;
     left: 0;
     height: 100%;
     width: 100%;
+    background-size: 20rem;
     background-image: url(./../../../assets/img/shadows/green1.svg);
 }
 
 .shadow-purple {
-    top: 70vh;
+    top: 50rem;
+    left: -50px;
     bottom: 0;
-    left: -5%;
     right: 0;
-    background-size: 40%;
+    background-size: 20rem;
     background-image: url(./../../../assets/img/shadows/purple2.svg);
 }
 
-@media (max-width: 939px) {
+@media (max-width: 1200px) {
     .project {
         flex-direction: column;
         text-align: center;
@@ -133,7 +143,7 @@
     }
 
     .shadow-purple {
-        background-size: 100%;
+        background-size: 50rem;
         top: 115vh;
     }
 
@@ -146,6 +156,14 @@
 @media (max-width: 800px) {
     h4 {
         font-size: 2.3rem !important;
+    }
+
+    .shadow-green {
+        background-size: 15rem;
+    }
+    
+    .shadow-purple {
+        background-size: 15rem;
     }
 }
 

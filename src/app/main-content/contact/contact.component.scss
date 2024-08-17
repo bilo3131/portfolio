@@ -1,6 +1,6 @@
-.contact {
-    padding-top: 30vh;
-    padding-bottom: 20vh;
+section {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 a {
@@ -29,11 +29,13 @@ h2 {
 
 .shadow-green {
     background-image: url(./../../../assets/img/shadows/green2.svg);
-    background-position: 100% -40%;
+    background-position: 100% 40%;
+    background-size: 20rem;
     top: -30%;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 100%;
 }
 
 .shadow-purple {
@@ -210,6 +212,10 @@ button {
     .checkbox {
         height: 1rem;
         width: 1rem;
+    }
+
+    .shadow-green {
+        background-size: 15rem;
     }
 }
 

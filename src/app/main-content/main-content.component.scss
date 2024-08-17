@@ -1,14 +1,14 @@
 .ellipse {
     background-image: url(./../../assets/img/Background.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     position: absolute;
-    top: 20vh;
-    bottom: 0;
+    background-position: center;
+    top: 500px;
     left: 0;
     right: 0;
     z-index: 1;
-    height: 200%;
+    height: calc(100% + 300px);
 }
 
 html, body {
@@ -21,107 +21,86 @@ html, body {
 
 @media (min-width: 940px) {
     .ellipse {
-        top: 55vh;
+        top: 610px;
     }
 }
 
 @media (min-width: 1010px) {
     .ellipse {
-        top: 45vh;
+        top: 100px;
     }
 }
 
 @media (min-width: 1190px) {
     .ellipse {
-        top: 35vh;
+        top: 130px;
     }
 }
 
 @media (min-width: 1290px) {
     .ellipse {
-        top: 30vh;
+        top: 190px;
     }
 }
 
 @media (min-width: 1390px) {
     .ellipse {
-        background-size: 120%;
-        top: 25vh;
+        top: 180px;
     }
 }
 
 @media (min-width: 1500px) {
     .ellipse {
-        background-size: 100%;
-        top: 20vh;
-    }
-}
-
-@media (min-width: 1550px) {
-    .ellipse {
-        background-size: 110%;
-        top: 25vh;
-    }
-}
-
-@media (min-width: 1640px) {
-    .ellipse {
-        background-size: 110%;
-        top: 20vh;
-    }
-}
-
-@media (min-width: 1750px) {
-    .ellipse {
-        background-size: 110%;
-        top: 15vh;
-    }
-}
-
-@media (min-width: 1900px) {
-    .ellipse {
-        background-size: 110%;
-        top: 10vh;
+        top: 260px;
     }
 }
 
 @media (min-width: 2000px) {
     .ellipse {
-        background-size: 120%;
-        top: 0vh;
+        top: 280px;
     }
 }
 
-@media (min-width: 2070px) {
+@media (min-width: 2320px) {
     .ellipse {
-        background-size: 145%;
-        top: -20vh;
+        top: 180px;
     }
 }
 
-@media (min-width: 2110px) {
+@media (min-width: 2800px) {
     .ellipse {
-        background-size: 150%;
-        top: -30vh;
+        top: 170px;
     }
 }
 
-@media (min-width: 2210px) {
+@media (min-width: 2930px) {
     .ellipse {
-        top: -35vh;
+        top: 70px;
     }
 }
 
-@media (max-width: 939px) {
+@media (min-width: 3480px) {
     .ellipse {
-        top: 40vh;
-        background-size: 100%;
+        top: -20px;
+    }
+}
+
+@media (min-width: 3920px) {
+    .ellipse {
+        top: -180px;
+    }
+}
+
+@media (max-width: 940px) {
+    .ellipse {
+        top: 200px;
+        background-size: contain;
         background-image: url(./../../assets/img/Background-mobile.svg);
     }
 }
 
 @media (max-width: 570px) {
     .ellipse {
-        top: 50vh;
+        top: 0;
     }
 }

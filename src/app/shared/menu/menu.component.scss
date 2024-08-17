@@ -1,5 +1,5 @@
 nav {
-    height: 10vh;
+    height: 100px;
     background-color: #141D2F;
     color: white;
     position: fixed;
@@ -119,7 +119,7 @@ h3 {
     height: 100%;
 }
 
-@media (max-width: 939px) {
+@media (max-width: 940px) {
     .nav-buttons {
         display: none;
     }

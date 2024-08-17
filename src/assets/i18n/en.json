@@ -44,6 +44,7 @@
         "required_name": "Your name is required",
         "required_email": "Your email is required",
         "required_message": "Your message is empty",
+        "required_privacy": "Please accept the privacy policy",
         "read": "I've read the",
         "privacy_policy": "privacy policy",
         "agreed": "and agree to the processing of my data as outlined.",

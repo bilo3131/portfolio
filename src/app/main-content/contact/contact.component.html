@@ -1,18 +1,18 @@
 <section class="relative">
     <div class="contact max-width">
-        <div class="header ai-center" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
+        <div class="header ai-center" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
             <div class="line"></div>
             <h2>{{ "contact.title" | translate }}</h2>
         </div>
         <div class="padding-l100 padding-r100 contact-form">
-            <div class="contact-text" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
+            <div class="contact-text" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
                 <h4>{{ "contact.question" | translate }}</h4>
                 <span>
                     <p>{{ "contact.description" | translate }}</p>
                     <p>{{ "contact.need_help" | translate }} <b>{{ "contact.contact_me" | translate }}</b></p>
                 </span>
             </div>
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800">
                 <div>
                     <input minlength="2" [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
                         required placeholder="{{ 'contact.placeholder_name' | translate }}">
@@ -34,7 +34,7 @@
                         <p>{{ "contact.read" | translate }} <a (click)="openPrivacy()">{{ "contact.privacy_policy" | translate }}</a> {{ "contact.agreed" | translate }}
                         </p>
                     </div>
-                    <p class="error privacy-error-position" *ngIf="showCheckboxError">Please accept the privacy policy.</p>
+                    <p class="error privacy-error-position" *ngIf="showCheckboxError">{{ "contact.required_privacy" | translate }}</p>
                 </div>
                 <button type="submit" [disabled]="!name.valid || !email.valid || !message.valid || !checkbox.checked"
                     class="button">{{ "contact.button" | translate }}</button>
