@@ -11,17 +11,42 @@
     height: calc(100% + 300px);
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+@media (min-width: 300px) {
+    .ellipse {
+        top: 0;
+    }
+}
+
+@media (min-width: 570px) {
+    .ellipse {
+        top: 10px;
+    }
+}
+
+@media (min-width: 620px) {
+    .ellipse {
+        top: 50px;
+    }
+}
+
+@media (min-width: 750px) {
+    .ellipse {
+        top: 90px;
+    }
 }
 
 @media (min-width: 940px) {
     .ellipse {
-        top: 610px;
+        top: 140px;
     }
 }
 
@@ -93,14 +118,7 @@ html, body {
 
 @media (max-width: 940px) {
     .ellipse {
-        top: 200px;
         background-size: contain;
         background-image: url(./../../assets/img/Background-mobile.svg);
-    }
-}
-
-@media (max-width: 570px) {
-    .ellipse {
-        top: 0;
     }
 }
