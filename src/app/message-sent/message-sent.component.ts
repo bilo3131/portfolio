@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './message-sent.component.html',
-  styleUrl: './message-sent.component.scss'
+  styleUrls: ['./message-sent.component.scss']
 })
 export class MessageSentComponent {
 

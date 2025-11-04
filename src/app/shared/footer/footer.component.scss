@@ -1,7 +1,6 @@
 .footer {
     height: 25vh;
     border-top: solid 2px #70E61C;
-    // display: block;
 }
 
 .footer-content {
@@ -41,33 +40,6 @@
     color: white;
     
     img {
-        height: 60px;
-    }
-}
-
-@media (max-width: 800px) {
-    .gap4 {
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 690px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 2rem;
-        padding-bottom: 150px;
-        padding-top: 50px;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: unset;
-    }
-
-    .copyright {
-        margin: 0;
+        height: 50px;
     }
 }

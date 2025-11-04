@@ -26,7 +26,7 @@
     "portfolio": {
         "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
         "projects": {
-            "description1": "Task manager inspired by the Kanban System. Creat and organize tasks using drag and drop functions, assign users and categories.",
+            "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             "description2": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickenboss.",
             "description3": "Based on the PokéAPI a simple library that provides and catalogues pokémon information."
         }
@@ -35,7 +35,7 @@
     "contact": {
         "title": "Contact",
         "question": "Got a problem to solve?",
-        "description": "Contact me through this form, I am interested in hearing from you, knowing ideas and cotributing to your projects with my work.",
+        "description": "Contact me through this form. I am interested in hearing from you, knowing ideas and contributing to your projects with my work.",
         "need_help": "Need a Frontend developer?",
         "contact_me": "Contact me!",
         "placeholder_name": "Your name",

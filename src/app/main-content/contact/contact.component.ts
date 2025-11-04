@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  styleUrls: ['./contact.component.scss', './../../shared/responsive/responsive-contact.scss'],
   imports: [FormsModule, NgIf, TranslateModule],
   standalone: true,
 })

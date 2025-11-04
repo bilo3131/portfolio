@@ -44,22 +44,26 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
     margin: 0;
-    font-size: 7rem;
+    // font-size: 7rem;
+    font-size: clamp(2rem, 5vw, 7rem);
 }
 
 h2 {
     margin: 0;
-    font-size: 4rem;
+    // font-size: 4rem;
+    font-size: clamp(1.6rem, 10vw, 4rem);
 }
 
 h3 {
     margin-top: 0;
-    font-size: 5rem;
+    // font-size: 5rem;
+    font-size: clamp(2rem, 4vw, 5rem);
 }
 
 h4 {
     margin: 0;
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: clamp(1rem, 10vw, 2rem);
     color: #9747FF;
 }
 
@@ -125,15 +129,11 @@ h5 {
 }
 
 .padding-l100 {
-    padding-left: 100px;
+    padding-left: min(6em, 8%);
 }
 
 .padding-r100 {
-    padding-right: 100px;
-}
-
-.padding-r200 {
-    padding-right: 200px;
+    padding-right: min(6em, 8%);
 }
 
 .font-light {
@@ -201,128 +201,3 @@ h5 {
     font-family: poppins-thin;
     src: url('./assets/fonts/Poppins-Thin.ttf');
 }
-
-@media (min-width: 2120px) {
-    .padding-l100 {
-        padding-left: 0;
-    }
-
-    .padding-r100 {
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 1390px) {
-    h1 {
-        font-size: 5rem;
-    }
-
-    h4 {
-        font-size: 2.3rem !important;
-    }
-
-    h3 {
-        font-size: 4rem;
-    }
-}
-
-@media (max-width: 1040px) {
-    .padding-l100 {
-        padding-left: 50px;
-    }
-
-    .padding-r100 {
-        padding-right: 50px;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-        padding-left: 14px;
-    }
-
-    h4 {
-        font-size: 1.8rem !important;
-    }
-
-    .button {
-        width: 150px;
-        height: 60px;
-    }
-}
-
-@media (max-width: 940px) {
-    .padding-l100 {
-        padding-left: 50px;
-    }
-
-    .padding-r100 {
-        padding-right: 50px;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-        padding-left: 14px;
-    }
-
-    h4 {
-        font-size: 1.8rem !important;
-    }
-
-    .button {
-        width: 150px;
-        height: 60px;
-    }
-}
-
-@media (max-width: 800px) {
-    .icon50 {
-        height: 35px;
-    }
-
-    .gap4 {
-        gap: 2rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    h4 {
-        font-size: 1.3rem !important;
-    }
-
-    p {
-        font-size: .8rem !important;
-    }
-}
-
-@media (max-width: 490px) {
-    .button {
-        width: 130px;
-        height: 50px;
-        font-family: poppins-light;
-        font-size: 1rem;
-    }
-}
-
-// @media (min-height: 1050px) {
-//     .h100 {
-//         height: 1050px;
-//     }
-// }

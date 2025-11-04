@@ -19,16 +19,16 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $message = $params->message;
         $checkbox = $params->checkbox;
 
-        $recipient = 'bilalalac@gmail.com';
+        $recipient = 'contact@bilalalac.de';
         $subject = "Contact From <$email>";
-        $message = "From:" . $name . "<br>" . $message;
+        $message = "From: " . $name . "<br>" . $message;
 
         $headers = array();
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=utf-8';
 
         // Additional headers
-        $headers[] = "From: message@bilalalac.de";
+        $headers[] = "From: portfolio@bilalalac.de";
 
         mail($recipient, $subject, $message, implode("\r\n", $headers));
         break;

@@ -5,7 +5,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
+  styleUrls: ['./menu.component.scss', './../responsive/responsive-menu.scss'],
   imports: [TranslateModule],
   standalone: true,
 })
