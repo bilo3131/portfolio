@@ -5,9 +5,6 @@
             height: 8rem;
         }
 
-        img {
-            height: 4rem;
-        }
     }
 }
 
@@ -23,14 +20,6 @@
         width: 65%;
         gap: 5rem;
     
-        img {
-            height: 5rem;
-            transition: all 225ms ease-in-out;
-        }
-        
-        p {
-            font-size: 1rem;
-        }
     }
 }
 
@@ -46,20 +35,12 @@
     .skills-section {
         gap: 4rem;
 
-        img {
-            height: 4rem;
-        }
-
         div {
 
             p {
                 font-size: 1rem;
             }
         }
-    }
-
-    .font-light {
-        font-size: 1rem;
     }
 }
 
@@ -104,7 +85,6 @@
     section {
         flex-direction: column-reverse;
         align-items: center;
-        height: 100%;
     }
 
     .description {
@@ -112,7 +92,6 @@
         width: 100%;
 
         p {
-            width: 70%;
             align-self: flex-end;
             text-align: right;
         }
@@ -122,16 +101,11 @@
         padding-bottom: 40px;
         align-items: center;
         justify-content: center;
-        width: 70%;
         padding-right: 50px;
 
         div {
             width: 20%;
             height: 35%;
-        }
-
-        img {
-            height: 5rem;
         }
     }
 
@@ -147,31 +121,5 @@
 @media (max-width: 800px) {
     .skills-section {
         gap: 2rem;
-
-        img {
-            height: 3rem;
-        }
-    }
-}
-
-@media (max-width: 710px) {
-    .skills-section {
-        img {
-            height: 4rem;
-        }
-    }
-}
-
-@media (max-width: 570px) {
-    .skills-section {
-        width: 90%;
-    }
-}
-
-@media (max-width: 430px) {
-    .skills-section {
-        img {
-            height: 3rem;
-        }
     }
 }

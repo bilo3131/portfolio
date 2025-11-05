@@ -1,103 +1,15 @@
-// @media (min-width: 300px) {
-//     .ellipse {
-//         top: 0;
-//     }
-// }
+// Small Laptops and Notebooks
+@media (max-width: 1540px) {
+    .ellipse {
+        height: clamp(96rem, 204vh, 112rem);
+        top: 0;
+    }
+}
 
-// @media (min-width: 570px) {
-//     .ellipse {
-//         top: 10px;
-//     }
-// }
-
-// @media (min-width: 620px) {
-//     .ellipse {
-//         top: 50px;
-//     }
-// }
-
-// @media (min-width: 750px) {
-//     .ellipse {
-//         top: 90px;
-//     }
-// }
-
-// @media (min-width: 940px) {
-//     .ellipse {
-//         top: 140px;
-//     }
-// }
-
-// @media (min-width: 1010px) {
-//     .ellipse {
-//         top: 100px;
-//     }
-// }
-
-// @media (min-width: 1190px) {
-//     .ellipse {
-//         top: 130px;
-//     }
-// }
-
-// @media (min-width: 1290px) {
-//     .ellipse {
-//         top: 190px;
-//     }
-// }
-
-// @media (min-width: 1390px) {
-//     .ellipse {
-//         top: 180px;
-//     }
-// }
-
-// @media (min-width: 1500px) {
-//     .ellipse {
-//         top: 260px;
-//     }
-// }
-
-// @media (min-width: 2000px) {
-//     .ellipse {
-//         top: 280px;
-//     }
-// }
-
-// @media (min-width: 2320px) {
-//     .ellipse {
-//         top: 180px;
-//     }
-// }
-
-// @media (min-width: 2800px) {
-//     .ellipse {
-//         top: 170px;
-//     }
-// }
-
-// @media (min-width: 2930px) {
-//     .ellipse {
-//         top: 70px;
-//     }
-// }
-
-// @media (min-width: 3480px) {
-//     .ellipse {
-//         top: -20px;
-//     }
-// }
-
-// @media (min-width: 3920px) {
-//     .ellipse {
-//         top: -180px;
-//     }
-// }
-
+// Tablets and Smartphones
 @media (max-width: 940px) {
     .ellipse {
-        background-size: contain;
         background-image: url(./../../../assets/img/Background-mobile.svg);
-        height: clamp(90rem, 80vw, 110rem);
+        height: clamp(70rem, 159vh, 80rem);
     }
 }

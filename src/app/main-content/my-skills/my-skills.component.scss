@@ -20,7 +20,7 @@ section {
     gap: 5rem;
 
     img {
-        height: 5rem;
+        height: clamp(3rem, 8vw, 5rem);
         width: auto;
         transition: all 225ms ease-in-out;
 
@@ -39,9 +39,7 @@ section {
 
         p {
             cursor: default;
-            font-size: 1.2rem;
             text-align: center;
-
         }
     }
 }
@@ -71,7 +69,6 @@ section {
 }
 
 .font-light {
-    font-size: 1.2rem;
     margin-right: 15px;
     margin-bottom: 40px;
 }
