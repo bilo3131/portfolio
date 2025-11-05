@@ -67,7 +67,7 @@ section {
 
 .line {
     height: 5px;
-    width: 150px;
+    width: clamp(50px, 12vw, 150px);
     background-color: #9747FF;
 }
 

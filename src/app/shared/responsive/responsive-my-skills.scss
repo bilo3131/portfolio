@@ -1,87 +1,4 @@
-@media (min-width: 2120px) {
-    .skills-section {
-        div {
-            width: 8rem;
-            height: 8rem;
-        }
-
-    }
-}
-
-@media (max-width: 1500px) {
-    .skills-section {
-        width: 65%;
-    }
-}
-
-@media (max-width: 1390px) {
-
-    .skills-section {
-        width: 65%;
-        gap: 5rem;
-    
-    }
-}
-
-@media (max-width: 1355px) {
-
-    .header {
-
-        .line {
-            width: 100px;
-        }
-    }
-    
-    .skills-section {
-        gap: 4rem;
-
-        div {
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 1270px) {
-    .gap150 {
-        gap: 50px;
-    }
-}
-
-@media (max-width: 1170px) {
-    .skills-section {
-        gap: 3rem;
-        padding-top: 100px;
-    }
-}
-
-@media (max-width: 1140px) {
-    .header {
-        .line {
-            width: 70px;
-        }
-    }
-}
-
-@media (max-width: 1085px) {
-    .skills-section {
-        gap: 2rem;
-    }
-
-    .header {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 950px) {
-    .skills-section {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 939px) {
+@media (max-width: 940px) {
     section {
         flex-direction: column-reverse;
         align-items: center;
@@ -90,6 +7,7 @@
     .description {
         align-self: flex-end;
         width: 100%;
+        padding-top: 0;
 
         p {
             align-self: flex-end;
@@ -102,11 +20,7 @@
         align-items: center;
         justify-content: center;
         padding-right: 50px;
-
-        div {
-            width: 20%;
-            height: 35%;
-        }
+        width: unset;
     }
 
     .desktop {
@@ -118,8 +32,8 @@
     }
 }
 
-@media (max-width: 800px) {
-    .skills-section {
-        gap: 2rem;
-    }
-}
+// @media (max-width: 800px) {
+//     .skills-section {
+//         gap: 2rem;
+//     }
+// }
