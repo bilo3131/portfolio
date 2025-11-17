@@ -44,34 +44,34 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
     margin: 0;
-    font-size: clamp(2rem, 5vw, 7rem);
+    font-size: 7rem;
 }
 
 h2 {
     margin: 0;
-    font-size: clamp(2rem, 9vw, 4rem);
+    font-size: 4rem;
 }
 
 h3 {
     margin-top: 0;
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: 5rem;
 }
 
 h4 {
     margin: 0;
-    font-size: clamp(1.7rem, 8vw, 2.3rem);
+    font-size: 2.3rem;
     color: #9747FF;
 }
 
 h5 {
     margin: 0;
-    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-size: 2rem;
     font-family: poppins-thin;
     color: #70E61C;
 }
 
 p {
-    font-size: clamp(.8rem, 2vw, 1rem);
+    font-size: 1rem;
 }
 
 .text-purple {

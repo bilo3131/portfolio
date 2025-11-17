@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+.relative {
+    height: 100%;
+    width: 100%;
+}
+
 .h100 {
     padding-top: unset;
 }
@@ -15,25 +20,29 @@ section {
 }
 
 .profile-image {
-    align-self: flex-end;
-    margin-left: 180px;
-    height: clamp(14rem, 17vw, 20rem);
-    width: clamp(23rem, 15vw, 24rem);
+    position: relative;
+    height: 760px;
+    width: 532px;
+    padding-left: 50px;
     object-fit: contain;
-    margin-bottom: 180px;
-    scale: 2;
-    overflow-y: hidden;
+    object-position: 0px 100px;
+    z-index: 1;
 }
 
 .background {
+    position: absolute;
+    top: 0;
+    left: -48px;
+    height: 1000px;
+    width: 1000px;
     background-image: url(./../../../assets/img/shadows/profileShadow.svg);
-    background-size: clamp(14rem, 23vw, 20rem);
+    background-size: 708px;
     background-repeat: no-repeat;
-    background-position: clamp(2rem, 1vw, 3rem) 1rem;
+    background-position: 0 108px;
 }
 
 .name {
-    z-index: 2;
+    z-index: 3;
     padding-right: 200px;
 }
 
@@ -52,7 +61,7 @@ section {
 }
 
 .description {
-    font-size: clamp(.95rem, 2.3vw, 3.2rem);
+    font-size: 3.2rem;
     margin-bottom: 25px;
 }
 
@@ -74,10 +83,10 @@ section {
 .place-bottom {
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -80px;
     margin-bottom: 130px;
 
     .mail {
