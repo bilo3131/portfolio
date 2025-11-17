@@ -8,8 +8,8 @@ section {
     max-height: 480px;
 }
 
-.gap150 {
-    gap: 150px;
+.spacing {
+    gap:clamp(90px, 6vw, 150px);
 }
 
 .skills-section {

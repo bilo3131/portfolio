@@ -9,11 +9,16 @@
         align-self: unset;
         margin: 0;
         position: absolute;
-        top: 200px;
+        top: 28vh;
+        height: clamp(14rem, 40vw, 24rem);
+    }
+
+    .links {
+        margin-bottom: -160px;
     }
 
     .content {
-        margin-top: 400px;
+        margin-top: 60vh;
     }
 
     .mail {
