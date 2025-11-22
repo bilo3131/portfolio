@@ -1,16 +1,15 @@
-// Small Laptops and Notebooks
-@media (max-width: 1540px) {
+@media (max-width: 980px) {
     .ellipse {
-        // height: clamp(96rem, 204vh, 112rem);
-        // top: 0;
+        background-size: 100%;
+        background-image: url(./../../../assets/img/Background-mobile.svg);
+        height: 826px;
+        top: 544px;
+        min-width: 700px;
+        // right: unset;
+        right: 0;
     }
-}
 
-// Tablets and Smartphones
-@media (max-width: 940px) {
-    .ellipse {
-        // background-image: url(./../../../assets/img/Background-mobile.svg);
-        // height: clamp(70rem, 159vh, 80rem);
-        // top: clamp(28rem, 34vh, 40rem);
+    .full-view {
+        max-height: unset;
     }
 }
