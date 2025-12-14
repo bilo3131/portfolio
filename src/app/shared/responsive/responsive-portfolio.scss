@@ -45,4 +45,13 @@
         gap: 1rem;
         width: 100%;
     }
+
+    .max-width {
+        margin-left: unset !important;
+        margin-right: unset !important;
+    }
+
+    .section-text {
+        min-width: unset;
+    }
 }

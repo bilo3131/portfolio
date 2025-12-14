@@ -1,7 +1,10 @@
 <section class="footer">
     <div class="footer-content padding-r100 padding-l100 jc-between ai-center max-width">
         <div class="column">
-            <a class="start" (click)="openPage('')"><img src="./../../../assets/img/logo.svg" alt=""></a>
+            <div class="start" (click)="openPage('')">
+                <a><img class="logo" src="./../../../assets/img/logo.svg" alt=""></a>
+                <a><img class="initials" src="./../../../assets/img/initials.svg" alt=""></a>
+            </div>
             <a class="link desktop" (click)="openPage('imprint')">{{ "footer.imprint" | translate }}</a>
         </div>
         <p class="copyright">&copy; Bilal Alaç 2025</p>

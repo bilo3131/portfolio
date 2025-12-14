@@ -1,7 +1,7 @@
 .footer {
     height: 25vh;
     max-height: 300px;
-    border-top: solid 2px #70E61C;
+    border-top: solid 2px #70e61c;
 }
 
 .footer-content {
@@ -9,7 +9,7 @@
 }
 
 .copyright {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: poppins-light;
 }
 
@@ -22,8 +22,8 @@
     &:hover {
         cursor: pointer;
         font-family: poppins-light;
-        color: #70E61C;
-        text-decoration: underline #70E61C;
+        color: #70e61c;
+        text-decoration: underline #70e61c;
     }
 }
 
@@ -32,15 +32,26 @@
 }
 
 .green {
-    color: #70E61C;
+    color: #70e61c;
 }
 
 .start {
-    text-decoration: none;
     cursor: pointer;
-    color: white;
-    
-    img {
+    transition: all 225ms ease-in-out;
+    position: relative;
+
+    .initials {
+        position: absolute;
+        top: 14px;
+        left: 15px;
+    }
+
+    .logo {
         height: 50px;
     }
+
+    &:hover {
+        scale: 1.1;
+    }
 }
+

@@ -7,6 +7,7 @@ body {
     font-family: poppins-bold;
     background-color: #141d2f;
     color: white;
+    overflow-x: hidden;
     --sb-track-color: #9747ff00;
     --sb-thumb-color: #9747ff;
     --sb-size: 12px;
@@ -42,6 +43,29 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
 
+.start {
+    cursor: pointer;
+    position: relative;
+}
+
+.logo {
+    animation-name: spin;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.initials {
+    position: absolute;
+    top: 28px;
+    left: 80px;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
 h1 {
     margin: 0;
     font-size: 7rem;
@@ -50,6 +74,7 @@ h1 {
 h2 {
     margin: 0;
     font-size: 4rem;
+    text-wrap: nowrap;
 }
 
 h3 {
@@ -175,6 +200,7 @@ p {
     width: auto;
     background-repeat: no-repeat;
     z-index: 1;
+    // animation: 2s ease-in-out infinite scaleShadow;
 }
 
 @font-face {
@@ -202,6 +228,30 @@ p {
     src: url("./assets/fonts/Poppins-Thin.ttf");
 }
 
+// @keyframes scaleShadow {
+//     0% {
+//         transform: scale(1);
+//     }
+    
+//     50% {
+//         transform: scale(2);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 980px) {
     .button {
         width: 8.25rem;
@@ -211,5 +261,19 @@ p {
 
     .h100 {
         max-height: unset;
+    }
+
+    .padding-l100 {
+        padding-left: 50px;
+    }
+    
+    .padding-r100 {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    h2 {
+        font-size: 3rem;
     }
 }
