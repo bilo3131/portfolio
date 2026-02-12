@@ -48,7 +48,7 @@ export class ContactComponent {
   mailTest = false;
 
   post = {
-    endPoint: 'https://bilalalac.de/sendMail.php',
+    endPoint: 'https://bilal-alac.de/api/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
 })
 export class FooterComponent {
+  currentYear: number = new Date().getFullYear();
 
   constructor(private router: Router) {
 
