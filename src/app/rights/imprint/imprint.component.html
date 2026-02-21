@@ -1,14 +1,40 @@
-<section class="jc-center ai-center">
-    <h1>{{ "imprint.title" | translate }}</h1>
-    <div>
-        <p>Bilal Alac</p>
-        <p>Vor den Rahmen 8</p>
-        <p>35216 Biedenkopf</p>
-    </div>
+<section class="imprint-page container max-width padding-l100 padding-r100" aria-labelledby="imprint-title">
+  <header class="intro">
+    <h1 id="imprint-title">{{ "imprint.title" | translate }}</h1>
+    <p>{{ "imprint.subtitle" | translate }}</p>
+  </header>
 
-    <h2>{{ "imprint.contact" | translate }}</h2>
-    <div>
-        <p>{{ "imprint.phone" | translate }}: 017620241520</p>
-        <p>{{ "imprint.mail" | translate }}: contact&#64;bilal-alac.de</p>
-    </div>
+  <div class="imprint-grid">
+    <article class="card">
+      <h2>{{ "imprint.ownerTitle" | translate }}</h2>
+      <p class="name">{{ "imprint.ownerName" | translate }}</p>
+      <p>{{ "imprint.addressLine1" | translate }}<br />{{ "imprint.addressLine2" | translate }}</p>
+    </article>
+
+    <article class="card">
+      <h2>{{ "imprint.contactTitle" | translate }}</h2>
+      <p><span>{{ "imprint.phoneLabel" | translate }}:</span> <a href="tel:+4917620241520">{{ "imprint.phoneValue" | translate }}</a></p>
+      <p><span>{{ "imprint.mailLabel" | translate }}:</span> <a href="mailto:contact@bilal-alac.de">{{ "imprint.mailValue" | translate }}</a></p>
+    </article>
+  </div>
+
+  <article class="card">
+    <h2>{{ "imprint.responsibleTitle" | translate }}</h2>
+    <p>{{ "imprint.responsibleText" | translate }}</p>
+  </article>
+
+  <article class="card">
+    <h2>{{ "imprint.liabilityTitle" | translate }}</h2>
+    <p>{{ "imprint.liabilityText" | translate }}</p>
+  </article>
+
+  <article class="card">
+    <h2>{{ "imprint.euDisputeTitle" | translate }}</h2>
+    <p>
+      {{ "imprint.euDisputeText" | translate }}
+      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>
+    </p>
+  </article>
+
+  <p class="updated">{{ "imprint.updated" | translate }}</p>
 </section>

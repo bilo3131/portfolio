@@ -1,5 +1,6 @@
 section {
-    margin: 20vh 100px 20vh 100px;
+    margin: 20vh auto;
+    max-width: 980px;
 }
 
 h1 {
@@ -8,31 +9,35 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    margin-top: 2.5rem;
 }
 
 h3 {
     font-size: 2rem;
+    margin-top: 1.8rem;
 }
 
 h4 {
     font-size: 1.3rem;
     color: white;
+    margin-top: 1.2rem;
 }
 
-span {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
+p,
+li {
     font-size: 1.3rem;
     font-family: poppins-thin;
+    line-height: 1.55;
+}
+
+ul {
+    padding-left: 1.5rem;
 }
 
 a {
     text-decoration: underline;
     color: white;
-    transition: all 225ms ease-in-out;
+    transition: color 225ms ease-in-out;
 
     &:hover {
         color: #70E61C;
