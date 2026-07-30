@@ -19,10 +19,10 @@
         <div class="mobile-menu" id="mobile-menu">
             <div class="mobile-menu-buttons gap4 nav-buttons">
                 <a href="#start" (click)="menuAnimation()">Start</a>
-                <a href="#about-me" (click)="menuAnimation()">About me</a>
+                <a href="#about-me" (click)="menuAnimation()">{{ "navbar.about_me" | translate }}</a>
                 <a href="#skills" (click)="menuAnimation()">Skills</a>
                 <a href="#portfolio" (click)="menuAnimation()">Portfolio</a>
-                <a href="#contact" (click)="menuAnimation()">Contact</a>
+                <a href="#contact" (click)="menuAnimation()">{{ "navbar.contact" | translate }}</a>
                 <img src="./../../../assets/img/icons/language/german.png" (click)="switchLanguage('de')" alt="">
                 <img src="./../../../assets/img/icons/language/english.png" (click)="switchLanguage('en')" alt="">
             </div>
