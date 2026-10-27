@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import * as Aos from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-start',
@@ -9,8 +10,11 @@ import * as Aos from 'aos';
   imports: [TranslateModule],
   standalone: true,
 })
-export class StartComponent {
+export class StartComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
   ngOnInit() {
-    Aos.init();
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
   }
 }

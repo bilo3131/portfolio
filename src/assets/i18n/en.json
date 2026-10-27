@@ -23,7 +23,8 @@
     "portfolio": {
         "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
         "projects": {
-            "descriptionVarDIY": "Shift planning app with absence management, qualification-based scheduling, working-time-law-compliant planning, and integrated payments via Stripe.",
+            "descriptionVardiy": "Company website for my web development business: custom child theme and plugin, scroll animations, contact form with SMTP, SEO and full go-live including DNS, SSL and security hardening.",
+            "descriptionSchichtplaner": "Shift planning app with absence management, qualification-based scheduling, working-time-law-compliant planning, and integrated payments via Stripe.",
             "descriptionJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             "descriptionElPolloLoco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickenboss.",
             "descriptionPokedex": "Based on the PokéAPI a simple library that provides and catalogues pokémon information."

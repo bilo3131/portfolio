@@ -22,6 +22,7 @@ section {
     img {
         height: clamp(3rem, 8vw, 5rem);
         width: auto;
+        max-height: 50px;
         transition: all 225ms ease-in-out;
 
         &:hover {
@@ -80,4 +81,8 @@ section {
     &:hover {
         background-color: #9747FF;
     }
+}
+
+.invert {
+    filter: invert(1);
 }
